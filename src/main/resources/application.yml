@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: springboot_05_ssmp
+  datasource:
+    # 驱动类名称
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    # 数据库连接的url
+    url: jdbc:mysql://localhost:3306/ssm_db
+    # 连接数据库的用户名
+    username: root
+    # 连接数据库的密码
+    password: 071024yT.
+    type: com.alibaba.druid.pool.DruidDataSource
+
+server:
+  port: 81
+
+mybatis-plus:
+  global-config:
+    db-config:
+      table-prefix: tb1_
+
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
